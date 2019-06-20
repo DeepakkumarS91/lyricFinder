@@ -42,7 +42,7 @@ class Lyrics extends Component {
       return (
         <React.Fragment>
           {console.log(track)}
-          <Link to={"/"} className="btn btn-success mb-4 ">
+          <Link to={"/"} className="btn btn-primary mb-4 ">
             <i className="fas fa-backward"> Go Back</i>
           </Link>
           <div className="container mb-4">
@@ -70,10 +70,10 @@ class Lyrics extends Component {
                   </li>
                   <li className="list-group-item">
                     <strong>Lyric Genre</strong>:{" "}
-                    {
-                      track.track.primary_genres.music_genre_list[0].music_genre
-                        .music_genre_name
-                    }
+                    {track.track.primary_genres.music_genre_list.length === 0
+                      ? "none"
+                      : track.track.primary_genres.music_genre_list[0]
+                          .music_genre.music_genre_name}
                   </li>
                   <li className="list-group-item">
                     <strong>Explicit Words</strong>:{" "}
