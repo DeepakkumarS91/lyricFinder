@@ -1,4 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It uses MusicMatch Api to get the lyrics.https://developer.musixmatch.com/
+
+It is deploy @ https://searchlyrics.netlify.com/
+
+It uses React Context Api for state mangement
 
 ## Available Scripts
 
